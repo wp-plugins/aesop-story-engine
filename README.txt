@@ -22,7 +22,7 @@ The Aesop Story Engine is a suite of open-sourced tools and components that empo
 [youtube http://www.youtube.com/watch?v=BndId0gvMlA]
 
 Utilizing these components, writers can can take their work to the next level, and developers can utilize the core storytelling engine to build feature-rich, visually compelling WordPress themes. Here’s a demo theme incorporating these story components.
-[http://playground.aesopstories.com](http://playground.aesopstories.come)
+[http://playground.aesopstories.com](http://playground.aesopstories.com)
 
 **Audio**   
 Display an audio player with support for MP3. This is great for showcasing audio interviews.
