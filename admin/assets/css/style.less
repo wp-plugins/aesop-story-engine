@@ -1,0 +1,330 @@
+@main:      #333333;
+@accent:    #222222;
+@link:      #0074a2;
+
+////////////////
+///////////////
+////// GENERATOR
+////////////////
+////////////////
+
+#jpb_vscbuttons, #jpb_vscbutton {
+    position:absolute;
+    z-index:999998;
+    padding:2px;
+    display:none;
+}
+
+#jpb_vscbuttons img, #jpb_vscbutton img {
+    background-color : #eee;
+    border: 1px solid #999;
+    border-radius: 3px;
+    margin: 2px;
+    padding: 2px;
+}
+
+#jpb_vscbuttons img:hover, #jpb_vscbutton img:hover {
+    background-color: #ccc;
+    border-color: #555;
+}
+
+
+// inner options
+.dk_container {
+    background: @main;
+    margin: 13px auto 25px;
+    width:100%;
+    position: relative;
+
+    .dk_options a {
+        display: block;
+        padding: 8px 10px;
+        cursor: pointer;
+        text-decoration: none;
+
+        &:active {
+            outline: none;
+        }
+    }
+
+    &:focus {
+        outline:0;
+    }
+}
+
+// hide select
+.dk_toggle {
+    display: none !important;
+}
+.dk_options_inner {
+    max-height: 250px;
+    margin:0;
+    text-shadow: #000 0 1px 0;
+
+    li {
+        margin:0;
+        width:33.333%;
+        display: inline-block;
+        vertical-align: top;
+        min-height:60px;
+        background-image: url(../img/ai-core-sprite.png);
+        background-repeat: repeat-x;
+        text-indent: -100000px;
+
+        a {
+            min-height: 44px;
+        }
+
+        a:hover,
+        &.dk_option_current a {
+            background-image: url(../img/ai-core-sprite-hover.png);
+            background-repeat: repeat-x;
+            transition:none;
+        }
+
+        // image
+        &.image {
+            background-position: 0 0;
+        }
+        &.image.dk_option_current a,
+        &.image a:hover {
+            background-position: 0 0;
+        }
+
+        // character
+        &.character {
+            background-position: 0 -60px;
+        }
+        &.character.dk_option_current a,
+        &.character a:hover {
+            background-position: 0 -60px;
+        }
+
+        // qupte
+        &.quote {
+            background-position: 0 -120px;
+        }
+        &.quote.dk_option_current a,
+        &.quote a:hover {
+             background-position: 0 -120px;
+        }
+
+        // content
+        &.content {
+            background-position: 0 -180px;
+        }
+        &.content.dk_option_current a,
+        &.content a:hover {
+            background-position: 0 -180px;
+        }
+
+        // chapter head
+        &.chapter{
+            background-position: 0 -240px;
+        }
+        &.chapter.dk_option_current a,
+        &.chapter a:hover {
+            background-position: 0 -240px;
+        }
+
+        // parallax
+        &.parallax {
+            background-position: 0 -300px;
+        }
+        &.parallax.dk_option_current a,
+        &.parallax a:hover {
+            background-position: 0 -300px;
+        }
+
+        // audio
+        &.audio {
+            background-position: 0 -360px;
+        }
+        &.audio.dk_option_current a,
+        &.audio a:hover {
+            background-position: 0 -360px;
+        }
+
+        // video
+        &.video {
+            background-position: 0 -420px;
+        }
+        &.video.dk_option_current a,
+        &.video a:hover {
+            background-position: 0 -420px;
+        }
+
+        // map
+        &.map {
+            background-position: 0 -480px;
+        }
+        &.map.dk_option_current a,
+        &.map a:hover {
+            background-position: 0 -480px;
+        }
+
+        // video
+        &.timeline_stop {
+            background-position: 0 -540px;
+        }
+        &.timeline_stop.dk_option_current a,
+        &.timeline_stop a:hover {
+            background-position: 0 -540px;
+        }
+        // document
+        &.document {
+            background-position: 0 -600px;
+        }
+        &.document.dk_option_current a,
+        &.document a:hover {
+            background-position: 0 -600px;
+        }
+        // collection
+        &.collection {
+            background-position: 0 -660px;
+        }
+        &.collection.dk_option_current a,
+        &.collection a:hover {
+            background-position: 0 -660px;
+        }
+    }
+}
+
+// main generatoe
+#aesop-generator {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    position: absolute;
+    left:0;
+    top:0;
+    background: @accent;
+
+    #aesop-generator-shell {
+        padding: 20px;
+        box-sizing:border-box;
+    }
+    #aesop-generator-insert {
+        border-radius:5px;
+        opacity:1.0;
+        position:relative;
+        font-weight: normal;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        font-size: 14px;
+        color:#fff;
+        text-decoration: none;
+        padding: 6px 15px;
+        height: auto;
+        display: block;
+        text-align: center;
+        line-height: 2em;
+        background: @link;
+        margin: 0 auto;
+
+        &:hover {
+            background: darken(@link,5);
+        }
+    }
+
+}
+
+#TB_ajaxContent .aesop-component-description {
+    background:#222;
+    color:#CDCDCD;
+    padding:4px 6px;
+}
+
+#TB_overlay {
+    z-index: 997;
+}
+#TB_window {
+    z-index: 999;
+}
+
+// settings view
+#aesop-generator-settings-outer {
+    background: @main;
+    clear:both;
+
+    #aesop-generator-settings {
+        padding: 20px;
+
+        p {
+            margin:1em 0 2em;
+        }
+
+        label {
+            float: left;
+            color:#cdcdcd;
+            display: block;
+            width: 200px;
+            padding: 5px;
+            position: relative;
+            font-size:1.1em;
+
+        }
+        input[type="text"] {
+            width: 63%;
+            padding: 5px 8px;
+        }
+
+        input,
+        select {
+            font-size:1.25em;
+            line-height: 1.4em;
+            height:32px;
+        }
+
+        #aesop-generator-content,
+        .aesop-generator-attr-color,
+        .aesop-generator-attr-media_upload,
+        .aesop-generator-attr-text {
+            background:#cdcdcd;
+            color: #333;
+        }
+
+        input {
+
+            border: 1px solid black;
+            border-radius:5px;
+            position: relative;
+
+            &:focus {
+                border-color:#31b6e3;
+            }
+        }
+        select {
+            background:#cdcdcd;
+            color: #333;
+            border: 1px solid black;
+            border-radius:3px;
+            width: 63%;
+            position: relative;
+        }
+
+    }
+}
+
+.aesop-buttoninsert-wrap {
+    margin:0 !important;
+}
+.wp-media-buttons .aesop-admin-button-icon {
+    line-height: 1.5em;
+}
+
+.wp-fullscreen-active {
+    .aesop-add-story-component {
+        float: right;
+        line-height: 1.9;
+        height: auto;
+        margin-left: 12px;
+
+        span {
+            line-height: 1.6;
+            font-size: 18px;
+        }
+    }
+}
