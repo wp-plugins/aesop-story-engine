@@ -64,7 +64,7 @@ The 13th component is meant to be used on a page of your site, and allows you to
 This component allows you to upload a PDF or image, that is shown to the user once they click the component.
 
 Here’s a demo theme incorporating these story components.
-[http://playground.aesopstories.com](http://playground.aesopstories.come)
+[http://playground.aesopstories.com](http://playground.aesopstories.com)
 
 
 = Theme Implementation =
