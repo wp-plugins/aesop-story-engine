@@ -6,7 +6,7 @@ Donate link: https://github.com/bearded-avenger/aesop-core
 Tags: aesop, story, business, education, parallax, interactive, shortcode, gallery, grid gallery, thumbnail gallery, 
 Requires at least: 3.8
 Tested up to: 3.9
-Stable tag: 1.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -123,6 +123,21 @@ Full documentation can be found below.
 
 
 == Changelog ==
+
+= 1.0.1 =
+* MOVED - We removed the “automatic remembering of page position.” It’s quite possible nobody has even noticed this feature, as it wasn’t marketed, documented, nor mentioned. We’ve moved it to an upcoming “essentials” plugin. The main reason; this is an unexpected behavior to happen on pages without story components.
+* UPDATED - FitVids script with the latest fix for the “white text on Chromium 32” issue
+* MOVED - The “content” width class that’s applied to the Content component, was moved from the parent div (.aesop-content-component), to the child div (.aesop-content-comp-inner), so if background images are used in Content the component still stretches 100%.
+* FIXED - Fixed the width passing to content box if “content” is passed as attribute
+* FIXED - Fixed map component not centering
+* FIXED - Fixed incorrect quote size values
+* FIXED - Removed ability to set negative Quote size values
+* FIXED - Default color picker values passing to generator
+* FIXED - Bug with images not working in Document viewer
+* FIXED - Audio player from not recognizing audio
+* NEW - Sizes “3” and “4” to the Quote component font size
+* NEW - Message to empty generator settings
+* NEW - Support for Instagram and Vine within Video Component
 
 = 1.0 =
 * Initial Release
