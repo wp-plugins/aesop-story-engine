@@ -1,8 +1,8 @@
 === Aesop Story Engine ===
 Contributors: nphaskins
+Donate link: http://aesopstoryengine.com/donate/
 Author URI:  http://nickhaskins.com
 Plugin URI: http://aesopstoryengine.com
-Donate link: http://aesopstoryengine.com/donate/
 Tags: aesop, story, business, education, parallax, interactive, shortcode, gallery, grid gallery, thumbnail gallery, 
 Requires at least: 3.8
 Tested up to: 3.9
