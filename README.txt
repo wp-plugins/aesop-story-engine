@@ -6,7 +6,7 @@ Plugin URI: http://aesopstoryengine.com
 Tags: aesop, story, business, education, parallax, interactive, shortcode, gallery, grid gallery, thumbnail gallery, 
 Requires at least: 3.8
 Tested up to: 3.9
-Stable tag: 1.0.4
+Stable tag: 1.0.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -155,6 +155,16 @@ Full documentation can be found below.
 
 
 == Changelog ==
+
+= 1.0.5 =
+* NEW - Added new filter to adjust map meta locations in admin aesop_map_meta_location
+* NEW - Added new option to audio and video components viewend="on" which stops from playing once out of view
+* NEW - Added new filter to change the scroll container class for Chapter Component aesop_chapter_scroll_container
+* NEW - Added new filter to change the scroll nav class for Chapter Component aesop_chapter_nav_container
+* NEW - Added new filter to change the scroll container class for Timeline Component aesop_timeline_scroll_container
+* NEW - Mark markers can now do some HTML
+* FIXED - Bug with failing function on Android
+* CHANGED - The action name for inserting the Timeline component has changed from aesop_inside_body_top to ase_theme_body_inside_top. We’ve included a deprecation notice.
 
 = 1.0.4 =
 * FIXED - insecure assets if SSL enabled in wp-admin
