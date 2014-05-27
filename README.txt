@@ -6,7 +6,7 @@ Plugin URI: http://aesopstoryengine.com
 Tags: aesop, story, business, education, parallax, interactive, shortcode, gallery, grid gallery, thumbnail gallery, 
 Requires at least: 3.8
 Tested up to: 3.9
-Stable tag: 1.0.5
+Stable tag: 1.0.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -155,6 +155,17 @@ Full documentation can be found below.
 
 
 == Changelog ==
+
+= 1.0.6 =
+* NEW - New function aesop_component_exists
+* NEW - Added ability for Character Component to set a width
+* NEW - Added ability for Audio Component to have an optional title
+* NEW - Added ability for Quote Component to have a cite
+* FIXED - is_ipad notice on Android and select Windows devices
+* FIXED - Better checks for galleries and maps in posts
+* FIXED - If Image Component is floated keep it from breaking out of .aesop-content
+* FIXED - Missing viewstart and viewend options in Component Editor
+* UPDATED - Metabox library
 
 = 1.0.5 =
 * NEW - Added new filter to adjust map meta locations in admin aesop_map_meta_location
