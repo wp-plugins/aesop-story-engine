@@ -6,7 +6,7 @@ Plugin URI: http://aesopstoryengine.com
 Tags: aesop, story, business, education, parallax, interactive, shortcode, gallery, grid gallery, thumbnail gallery, 
 Requires at least: 3.8
 Tested up to: 3.9
-Stable tag: 1.0.6
+Stable tag: 1.0.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -155,6 +155,15 @@ Full documentation can be found below.
 
 
 == Changelog ==
+
+= 1.0.7 =
+* NEW - Parallax floater options added to Content Component
+* NEW - Ability to have text positioned anywhere in Content Component
+* NEW - Wistia support added to Video Component
+* NEW - Option added to Audio Component to make it invisible
+* NEW - Looping options enabled in Audio Component
+* NEW - Serbian Translation
+* FIXED - Bug with Image Component centering classes (props @mauryaratan)
 
 = 1.0.6 =
 * NEW - New function aesop_component_exists
