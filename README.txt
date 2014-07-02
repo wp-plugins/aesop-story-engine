@@ -1,12 +1,12 @@
 === Aesop Story Engine ===
-Contributors: nphaskins, mauryaratan
+Contributors: nphaskins, mauryaratan, Tmeister
 Donate link: http://aesopstoryengine.com/donate/
 Author URI:  http://nickhaskins.com
 Plugin URI: http://aesopstoryengine.com
 Tags: aesop, story, business, education, parallax, interactive, shortcode, gallery, grid gallery, thumbnail gallery, 
 Requires at least: 3.8
 Tested up to: 3.9
-Stable tag: 1.0.7
+Stable tag: 1.0.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -108,7 +108,7 @@ If you think something is missing, we want to hear from you. Post your request a
 Most of the components will work with most themes without any issues. It’s very important to know that this plugin only applies basic styles, and to take full advantage, a theme built for Aesop is probably a good idea.
 
 = Where can I find themes for Aesop? =
-That’s something we are actively working on, now that the plugin has finally been released.
+Various theme shops in the industry are actively creating Aesop Themes, in addition to the official Aesop themes located at [http://aesopstoryengine.com/library](http://aesopstoryengine.com/library)
 
 = Where can I find more information on making my theme fully compatible? =
 Full documentation can be found below.
@@ -155,6 +155,22 @@ Full documentation can be found below.
 
 
 == Changelog ==
+
+= 1.0.8 =
+* NEW - option description tip bubbles
+* NEW - Misc style refinements to the generator user interface
+* NEW - Updated icon for Galleries tab
+* NEW - Image caption is now displayed in the lightbox if set
+* NEW - changed lightbox to close if background is clicked
+* NEW - parallax floater option added to Content Component
+* NEW - polish translation - props trzyem
+* NEW - four additional hooks added to collections component - props @tmeister
+* FIXED - Bug with responsive images when px width is set
+* FIXED - Audio player from looping when set to off
+* UPDATED - translation file with new strings
+* UPDATED - Lightbox script
+* CHANGED - Floater can now be parallax even with parallax bg set to off in parallax component
+* CHANGED - Changed the “Upload” label to “Select Media”
 
 = 1.0.7 =
 * NEW - Parallax floater options added to Content Component
