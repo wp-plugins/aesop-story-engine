@@ -5,8 +5,8 @@ Author URI:  http://nickhaskins.com
 Plugin URI: http://aesopstoryengine.com
 Tags: aesop, story, business, education, parallax, interactive, shortcode, gallery, grid gallery, thumbnail gallery, 
 Requires at least: 3.8
-Tested up to: 3.9
-Stable tag: 1.0.8
+Tested up to: 4.0
+Stable tag: 1.0.9
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -77,6 +77,13 @@ It’s important to know that the plugin only produces very basic CSS for the co
 Theme authors and developers will find documentation covering everything from the markup that is generated, to actions, filters, and instructions for full Aesop integration.
 
 [http://aesopstoryengine.com/developers](http://aesopstoryengine.com/developers)
+
+** Update 7.31.14 **
+Aesop Story Engine 1.0.9 now features full theme compatibility with a simple code snippet that will load styles based on the components that you decide. While a dedicated theme is required to run components full-width, this will at least load all of the additional styles to give a basic design. Simply remove the component that you do not want to load additional styles for.
+
+`add_theme_support("aesop-component-styles", array("parallax", "image", "quote", "gallery", "content", "video", "audio", "collection", "chapter", "document", "character", "map", "timeline") );`
+
+We reccommend placing this in a WordPress themes functions.php, or use a plugin like [Code Snippets](https://wordpress.org/plugins/code-snippets/) and put it there.
 
 = Developers =
 This story engine was in beta for over 4 months, and every attempt has been made to ensure that 1.0 is as stable as can be. No breaking changes will be made until the next major version, which at the moment isn’t even a speckle in my daddies eye. All components are pluggable, and there are ample filters and actions to manipulate just about everything you can imagine. Refer to the documentation below for more.
@@ -155,6 +162,25 @@ Full documentation can be found below.
 
 
 == Changelog ==
+
+= 1.0.9 =
+* FIXED - Various generator fixes for WordPress 4.0
+* FIXED - Fixed not being able to use multiple collections due to invalid cache (props @tmeister)
+* FIXED - Fixed the default map zoom so its not so far zoomed out
+* FIXED - Video option display error within generator
+* FIXED - Spelling of the word Library in generator option descriptions
+* NEW - New extended css option that loads additional CSS in an effort to be compatible with more themes out of the box (see docs for more)
+* NEW - Updated Polish translation
+* NEW - New Photoset gallery type
+* NEW - Full compatibility for stacked gallery type. This was previously left up to themes.
+* NEW - Content component enhancements for background image
+* NEW - Galleries now have ID's that correspond to the gallery id and instance of gallery in the post
+* NEW - Filter - stacked gallery styles (aesop_stacked_gallery_styles_ID-INSTANCE) see docs
+* NEW - Filter - chapter component inline styles for the background image (aesop_chapter_img_styles_ID-INSTANCE) see docs
+* TWEAK - Fixed the way unique ID's are applied to each component to aid in customizing with css
+* TWEAK - Don't set a chapter image if one isn't set and add a class for this
+* TWEAK - Float class added to character and quote components if component is aligned left or right. This *may* have a different effect on your design so please be aware of this.
+* TWEAK - Content component now has wpautop filter applied which will make the text within the content component into proper paragraph elements. this *may* result in additional space in your design so please be aware of this tweak. We've also added a class to the parent component if an image is being used.
 
 = 1.0.8 =
 * NEW - option description tip bubbles
