@@ -6,7 +6,7 @@ Plugin URI: http://aesopstoryengine.com
 Tags: aesop, story, business, education, parallax, interactive, shortcode, gallery, grid gallery, thumbnail gallery, 
 Requires at least: 3.8
 Tested up to: 4.0
-Stable tag: 1.0.9
+Stable tag: 1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -19,7 +19,7 @@ The Aesop Story Engine is a suite of open-sourced tools and components that empo
 
 [http://aesopstoryengine.com](http://aesopstoryengine.com)
 
-[youtube http://www.youtube.com/watch?v=BndId0gvMlA]
+[youtube http://www.youtube.com/watch?v=84BFGxkHby0]
 
 Utilizing these components, writers can can take their work to the next level, and developers can utilize the core storytelling engine to build feature-rich, visually compelling WordPress themes. Here’s a demo theme incorporating these story components.
 [http://playground.aesopstories.com](http://playground.aesopstories.com)
@@ -66,8 +66,11 @@ This component allows you to upload a PDF or image, that is shown to the user on
 Here’s a demo theme incorporating these story components.
 [http://playground.aesopstories.com](http://playground.aesopstories.com)
 
+Here’s a real story.
+[http://aesopstoryseri.es/the-quiet-day/](http://aesopstoryseri.es/the-quiet-day/)
+
 Here’s documentation on the Story Engine.
-[http://aesopstoryengine.com/documentation](http://aesopstoryengine.com/documentation)
+[http://aesopstoryengine.com/help](http://aesopstoryengine.com/help)
 
 
 = Theme Implementation =
@@ -83,7 +86,7 @@ Aesop Story Engine 1.0.9 now features full theme compatibility with a simple cod
 
 `add_theme_support("aesop-component-styles", array("parallax", "image", "quote", "gallery", "content", "video", "audio", "collection", "chapter", "document", "character", "map", "timeline") );`
 
-We reccommend placing this in a WordPress themes functions.php, or use a plugin like [Code Snippets](https://wordpress.org/plugins/code-snippets/) and put it there.
+We recommend placing this in a WordPress themes functions.php, or use a plugin like [Code Snippets](https://wordpress.org/plugins/code-snippets/) and put it there.
 
 = Developers =
 This story engine was in beta for over 4 months, and every attempt has been made to ensure that 1.0 is as stable as can be. No breaking changes will be made until the next major version, which at the moment isn’t even a speckle in my daddies eye. All components are pluggable, and there are ample filters and actions to manipulate just about everything you can imagine. Refer to the documentation below for more.
@@ -162,6 +165,33 @@ Full documentation can be found below.
 
 
 == Changelog ==
+
+= 1.1 =
+* NEW - Complete compatibilty with WordPress 4.0
+* NEW - New user interface
+* NEW - Components are now editable
+* NEW - API for creating addons to sell or give away
+* NEW - RTL support
+* ADDED - Filters for Audio and Video component waypoints
+* ADDED - Filters for timeline and location offsets
+* ADDED - Filter to let Map component run on pages
+* ADDED - Gallery Component: added to the component generator with a dropdown to select gallery to insert
+* ADDED - Gallery Component: added captions to grid gallery items if a caption is set
+* ADDED - Content Component: added Floater Position option for parallax floater
+* TWEAK - Content Component: parallax code optimized and offsets automatically calculated
+* TWEAK - Map Component: automatically fall back to the first marker entered if the starting coordinate is missing and warn the user
+* TWEAK - Collection Component: mo longer have to input collection ID they are now automatically fed into a dropdown tand selectable by name
+* TWEAK - Parallax Component: floater item offset now automatically calculated - this means offset and speed options no longer necessary and have been removed
+* TWEAK - Parallax Component: optimizations and performance enhancements
+* TWEAK - Gallery Component: performance optimizations
+* TWEAK - Cleaned up user interface for creating Galleries in admin
+* TWEAK - Audio/Video Component: waypoint filters now targets individual components
+* TWEAK - Timeline Component: redesigned to perform well wihin 98% of WordPress themes
+* FIXED - Better support for Aesop Lazy Loader
+* FIXED - Video icon
+* FIXED - Quote Component: parallax floater options fixed (could not move up or down so two options are now left and right)
+* FIXED - Map Component:  warn users if no markers are set
+* FIXED - Map Component:  fixed empty bubbles appearing on markers with no text set
 
 = 1.0.9 =
 * FIXED - Various generator fixes for WordPress 4.0
