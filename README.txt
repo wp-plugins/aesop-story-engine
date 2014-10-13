@@ -6,7 +6,7 @@ Plugin URI: http://aesopstoryengine.com
 Tags: aesop, story, business, education, parallax, interactive, shortcode, gallery, grid gallery, thumbnail gallery, 
 Requires at least: 3.8
 Tested up to: 4.0
-Stable tag: 1.1
+Stable tag: 1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -165,6 +165,17 @@ Full documentation can be found below.
 
 
 == Changelog ==
+
+= 1.2 =
+* FIXED - Width on videos so that they remain responsive
+* FIXED - Undefined variable in thumbnail gallery
+* FIXED - Gallery images not respecting sizes
+* FIXED - Issue of overlapping placeholders when updating a component thats next to another component - #138 on GH
+* ADDED - New action "aesop_gallery_type" so 3rd party components can add new gallery types
+* ADDED - New filter aesop_generator_loads_on which accepts an array of admin pages to load the generator
+* TWEAK - Cleaned up the gallery creation process including removing core options from the gallery settings modal that Aesop doesn't use, along with only running our modifications on Aesop Galleries
+* TWEAK - Added additional checks to ensure $post is set before loading map components
+
 
 = 1.1 =
 * NEW - Complete compatibilty with WordPress 4.0
