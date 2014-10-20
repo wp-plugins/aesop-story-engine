@@ -140,7 +140,7 @@ Full documentation can be found below.
 
 == Changelog ==
 
-= 1.2.1 ==
+= 1.2.1 =
 * FIXED - lightbox gallery images not opening in grid gallery
 * FIXED - warnings with custom meta boxes if wp-admin is set to SSL
 * UPDATED - custom meta boxes to 1.2
