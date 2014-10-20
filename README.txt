@@ -6,7 +6,7 @@ Plugin URI: http://aesopstoryengine.com
 Tags: aesop, story, business, education, parallax, interactive, shortcode, gallery, grid gallery, thumbnail gallery, 
 Requires at least: 3.8
 Tested up to: 4.0
-Stable tag: 1.2
+Stable tag: 1.2.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -20,6 +20,9 @@ The Aesop Story Engine is a suite of open-sourced tools and components that empo
 [http://aesopstoryengine.com](http://aesopstoryengine.com)
 
 [youtube http://www.youtube.com/watch?v=84BFGxkHby0]
+
+**Try Aesop for Free**
+[http://tryaesop.com](http://tryaesop.com)
 
 Utilizing these components, writers can can take their work to the next level, and developers can utilize the core storytelling engine to build feature-rich, visually compelling WordPress themes. Here’s a demo theme incorporating these story components.
 [http://playground.aesopstories.com](http://playground.aesopstories.com)
@@ -147,11 +150,11 @@ Full documentation can be found below.
 Most of the components will work with most themes without any issues. It’s very important to know that this plugin only applies basic styles, and to take full advantage, a theme built for Aesop is probably a good idea.
 
 = Where can I find themes for Aesop? =
-That’s something we are actively working on, now that the plugin has finally been released.
+Various theme shops in the industry are actively creating Aesop Themes, in addition to the official Aesop themes located at http [http://aesopstoryengine.com/library](http://aesopstoryengine.com/library)
 
 = Where can I find more information on making my theme fully compatible? =
 Full documentation can be found below.
-[http://developers.aesopstories.com](http://developers.aesopstories.com)
+[http://aesopstoryengine.com/developers](http://aesopstoryengine.com/developers)
 
 == Screenshots ==
 
@@ -166,6 +169,12 @@ Full documentation can be found below.
 
 == Changelog ==
 
+= 1.2.1 ==
+* FIXED - lightbox gallery images not opening in grid gallery
+* FIXED - warnings with custom meta boxes if wp-admin is set to SSL
+* UPDATED - custom meta boxes to 1.2
+* NOTE - The next update we will be moving from Custom Meta Boxes by Humanmade to CMB2 by WebDev Studios.
+
 = 1.2 =
 * FIXED - Width on videos so that they remain responsive
 * FIXED - Undefined variable in thumbnail gallery
@@ -175,7 +184,6 @@ Full documentation can be found below.
 * ADDED - New filter aesop_generator_loads_on which accepts an array of admin pages to load the generator
 * TWEAK - Cleaned up the gallery creation process including removing core options from the gallery settings modal that Aesop doesn't use, along with only running our modifications on Aesop Galleries
 * TWEAK - Added additional checks to ensure $post is set before loading map components
-
 
 = 1.1 =
 * NEW - Complete compatibilty with WordPress 4.0
