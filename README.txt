@@ -6,7 +6,7 @@ Donate link: http://aesopstoryengine.com/donate
 Tags: aesop, story, business, education, parallax, interactive, shortcode, gallery, grid gallery, thumbnail gallery,
 Requires at least: 3.8
 Tested up to: 4.1
-Stable tag: 1.3
+Stable tag: 1.3.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -138,6 +138,9 @@ Full documentation can be found below.
 * Initial Release
 
 == Changelog ==
+
+= 1.3.1 =
+* Fix array syntax issues when using PHP versions prior to 5.4
 
 = 1.3 =
 * NEW - Freshly designed user interface with light color scheme to match WordPress design patterns
