@@ -1,17 +1,17 @@
 === Aesop Story Engine ===
-Contributors: nphaskins, mauryaratan, Tmeister
-Donate link: http://aesopstoryengine.com/donate/
+Contributors: nphaskins, mauryaratan, Tmeister, etcio
 Author URI:  http://nickhaskins.com
 Plugin URI: http://aesopstoryengine.com
-Tags: aesop, story, business, education, parallax, interactive, shortcode, gallery, grid gallery, thumbnail gallery, 
+Donate link: http://aesopstoryengine.com/donate
+Tags: aesop, story, business, education, parallax, interactive, shortcode, gallery, grid gallery, thumbnail gallery,
 Requires at least: 3.8
-Tested up to: 4.0
-Stable tag: 1.2.1
+Tested up to: 4.1
+Stable tag: 1.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 
-Suite of components that enables the creation of interactive storytelling themes for WordPress.
+Suite of components that enables the creation of interactive longform stories WordPress.
 
 == Description ==
 
@@ -27,43 +27,43 @@ The Aesop Story Engine is a suite of open-sourced tools and components that empo
 Utilizing these components, writers can can take their work to the next level, and developers can utilize the core storytelling engine to build feature-rich, visually compelling WordPress themes. Here’s a demo theme incorporating these story components.
 [http://playground.aesopstories.com](http://playground.aesopstories.com)
 
-**Audio**   
-Display an audio player with support for MP3. This is great for showcasing audio interviews.
-  
-**Video**   
-Showcase a fullscreen video with support for Kickstarter, Viddler, YouTube, Vimeo, Daily Motion, and Blip.TV.
+**Audio**
+Display an audio player with support for MP3 that can be optionally hidden. This is great for showcasing audio interviews.
 
-**Content**   
+**Video**
+Showcase a fullscreen video with support for Kickstarter, Viddler, YouTube, Vimeo, Daily Motion, and Blip.TV with support for captions and alignment.
+
+**Content**
 The content component is a multi-purpose component that can display a background image, background color, or can split the content into multiple magazine type columns.
 
-**Character**  
+**Character**
 Display a character avatar, title, and small bio to help readers be reminded of key story characters.
 
-**Galleries**  
+**Galleries**
 The ASE Gallery component allows you to create and manage unlimited story galleries. Each gallery can be displayed as a grid, a thumbnail gallery, stacked, or sequential type gallery, all with caption support.
 
-**Chapter Headings**  
-Creates scroll-to points with headings.
+**Chapter Headings**
+Creates scroll-to points with large full-screen images as headings.
 
-**Image**   
+**Image**
 The image component displays an image and caption, with optional lightbox. Also allows you to align the image, as well as offset the image so it hangs outside of the content column.
 
-**Locations**   
-This component allows you to create a map for your story. You can add markers to the map with custom messages. This is a great component for showcasing a characters travels.
+**Locations**
+This component allows you to create a map for your story. You can add markers to the map with custom messages, and even have the map scroll to points as you scroll through the story.
 
-**Parallax**   
+**Parallax**
 A fullwidth image component with caption and lightbox. As you scroll, the image moves slightly to provide a parallax effect. Includes optional floater parallax item to use for multiple levels of parallax engagement.
- 
-**Quote**  
+
+**Quote**
 Show a fullwidth quote with large text. Control the color and background of the quote component.
 
-**Timeline**   
+**Timeline**
 Create a story with a timeline that sticks to the bottom. The timeline works a bit like chapters.
 
-**Collections**    
+**Collections**
 The 13th component is meant to be used on a page of your site, and allows you to display stories from a specific collection (category).
 
-**Document Viewer**   
+**Document Viewer**
 This component allows you to upload a PDF or image, that is shown to the user once they click the component.
 
 Here’s a demo theme incorporating these story components.
@@ -102,36 +102,7 @@ If you think something is missing, we want to hear from you. Post your request a
 
 = Uploading in WordPress Dashboard =
 
-1. Navigate to the 'Add New' in the plugins dashboard
-2. Navigate to the 'Upload' area
-3. Select `aesop-core.zip` from your computer
-4. Click 'Install Now'
-5. Activate the plugin in the Plugin dashboard
-
-= Using FTP =
-
-1. Download `aesop-core.zip`
-2. Extract the `aesop-core` directory to your computer
-3. Upload the `aesop-core` directory to the `/wp-content/plugins/` directory
-4. Activate the plugin in the Plugin dashboard
-
-== Frequently Asked Questions ==
-
-= Does this work with all themes? =
-Most of the components will work with most themes without any issues. It’s very important to know that this plugin only applies basic styles, and to take full advantage, a theme built for Aesop is probably a good idea.
-
-= Where can I find themes for Aesop? =
-Various theme shops in the industry are actively creating Aesop Themes, in addition to the official Aesop themes located at [http://aesopstoryengine.com/library](http://aesopstoryengine.com/library)
-
-= Where can I find more information on making my theme fully compatible? =
-Full documentation can be found below.
-[http://aesopstoryengine.com/developers](http://aesopstoryengine.com/developers)
-
-== Installation ==
-
-= Uploading in WordPress Dashboard =
-
-1. Navigate to the 'Add New' in the plugins dashboard
+1. Navigate to 'Add New' in the plugins dashboard
 2. Navigate to the 'Upload' area
 3. Select `aesop-core.zip` from your computer
 4. Click 'Install Now'
@@ -166,10 +137,29 @@ Full documentation can be found below.
 = 1.0 =
 * Initial Release
 
-
 == Changelog ==
 
-= 1.2.1 =
+= 1.3 =
+* NEW - Freshly designed user interface with light color scheme to match WordPress design patterns
+* NEW - Map component admin with ability to click the map to add markers instead of manually adding GPS coordinates
+* NEW - Map component "sticky" mode that changes map markers as you scroll down the story
+* NEW - Map component tile filter aesop_map_tile_provider that allow you to specify a different tile provider per post (or globally) [ref](https://github.com/bearded-avenger/aesop-core/pull/172#issuecomment-63518448)
+* NEW - Components can now be cloned
+* NEW - New filter aesop_quote_component_unit to change unit size of blockquote 
+* FIXED - All variables now properly escaped within components
+* FIXED - The "used in" column of the Galleries edit screen
+* FIXED - Additional spaces being added on the front end after saving components 
+* FIXED - Timeline scrollnav build failing on certain occassions
+* FIXED - Some parts of the component placeholder highlighting after clicking the edit button
+* FIXED - JS error that shows if the visual editor is turned off in options (props @wavetree)
+* FIXED - Self hosted videos not stretching to 100% width
+* FIXED - Zero height on an aligned video component
+* FIXED - Only show grid caption markup if captions present (props @artjomsimon)
+* TWEAK - Related videos at the end of YouTube videos now off by default (props @artjomsimon)
+* TWEAK - Improved video markup
+* UPDATED - Fotorama, fitvids, scrollnav, and images loaded to their respective current versions
+
+= 1.2.1 ==
 * FIXED - lightbox gallery images not opening in grid gallery
 * FIXED - warnings with custom meta boxes if wp-admin is set to SSL
 * UPDATED - custom meta boxes to 1.2
@@ -246,6 +236,7 @@ Full documentation can be found below.
 * UPDATED - Lightbox script
 * CHANGED - Floater can now be parallax even with parallax bg set to off in parallax component
 * CHANGED - Changed the “Upload” label to “Select Media”
+
 
 = 1.0.7 =
 * NEW - Parallax floater options added to Content Component
