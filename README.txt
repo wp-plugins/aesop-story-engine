@@ -6,7 +6,7 @@ Donate link: http://aesopstoryengine.com/donate
 Tags: aesop, story, business, education, parallax, interactive, shortcode, gallery, grid gallery, thumbnail gallery,
 Requires at least: 3.8
 Tested up to: 4.1
-Stable tag: 1.3.1
+Stable tag: 1.3.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -138,6 +138,11 @@ Full documentation can be found below.
 * Initial Release
 
 == Changelog ==
+
+= 1.3.2 =
+* FIXED - Code showing in Chapter Component
+* FIXED - Parallax floater markup
+* FIXED - Sequence gallery images not showing
 
 = 1.3.1 =
 * Fix array syntax issues when using PHP versions prior to 5.4
