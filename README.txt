@@ -6,7 +6,7 @@ Donate link: http://aesopstoryengine.com/donate
 Tags: aesop, story, business, education, parallax, interactive, shortcode, gallery, grid gallery, thumbnail gallery,
 Requires at least: 3.8
 Tested up to: 4.1
-Stable tag: 1.4
+Stable tag: 1.4.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -15,7 +15,7 @@ Suite of components that enables the creation of interactive longform stories Wo
 
 == Description ==
 
-The Aesop Story Engine is a suite of open-sourced tools and components that empower developers and writers to build feature-rich, interactive, long-form storytelling themes for WordPress. At the heart of ASE are the suite of storytelling components, which are created on the fly while crafting posts within WordPress.
+Aesop Story Engine is a suite of open-sourced tools and components that empower developers and writers to build feature-rich, interactive, long-form storytelling themes for WordPress. At the heart of ASE are the suite of storytelling components, which are created on the fly while crafting posts within WordPress.
 
 [http://aesopstoryengine.com](http://aesopstoryengine.com)
 
@@ -138,6 +138,9 @@ Full documentation can be found below.
 * Initial Release
 
 == Changelog ==
+
+= 1.4.1 =
+* FIXED - Yandex in Fotorama : A few updates back we attempted to block Fotorama from inserting its Yandex tracker. Since we noticed that this sometimes fails to block, we've modified their source code and have removed it completely. It's also worth noting that they've gotten a lot of heat from this, and have since removed it all together from their script. This should no longer be an issue, and we apologize for any inconviences that we may have inadvertantly caused.
 
 = 1.4 =
 * NEW - Redesigned gallery admin - makes creating and managing galleries easier than ever before
