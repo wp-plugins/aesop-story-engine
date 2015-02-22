@@ -5,8 +5,8 @@ Plugin URI: http://aesopstoryengine.com
 Donate link: http://aesopstoryengine.com/donate
 Tags: aesop, story, business, education, parallax, interactive, shortcode, gallery, grid gallery, thumbnail gallery,
 Requires at least: 3.8
-Tested up to: 4.1
-Stable tag: 1.4.2
+Tested up to: 4.1.1
+Stable tag: 1.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -99,21 +99,24 @@ All components are pluggable, and there are ample filters and actions to manipul
 If you think something is missing, we want to hear from you. Post your request and bugs on [Github](https://github.com/bearded-avenger/aesop-core).
 
 = Languages =
-Aesop Story Engine is currently available in 14 languages. We work closely with the folks over at WP Translations, and it's because of them that these translations are available.  
-* German
-* Greek
-* Spanish
-* French
-* Japanese
-* Dutch
-* Polish
-* Breton
-* Romanian
-* Russian
-* Slovakian
-* Serbian
-* Turkish
-* Chinese
+Aesop Story Engine is currently available in 17 languages. We work closely with the folks over at WP Translations, and it's because of them that these translations are available.
+* Deutsch (German)
+* čeština‎ (Czech)
+* Ελληνικά (Greek)
+* Español (Spanish (Spain))
+* Français (French (France))
+* עִבְרִית (Hebrew)
+* Italiano (Italian)
+* 日本語 (Japanese)
+* Nederlands (Dutch)
+* Polski (Polish)
+* Português do Brasil (Portuguese (Brazil))
+* Română (Romanian)
+* Русский (Russian)
+* Slovenčina (Slovak)
+* Српски језик (Serbian)
+* Türkçe (Turkish)
+* 中文 (Chinese (China)
 
 == Installation ==
 
@@ -155,6 +158,12 @@ Full documentation can be found below.
 * Initial Release
 
 == Changelog ==
+
+= 1.5 =
+* NEW - Welcome screen on plugin activation
+* NEW - New "Type" option for Quote Component which allows the quote to be displayed as a standard pull quote
+* FIX - Blank map tiles with new Mapbox IDs. Mapbox changed things and now requires a public key for the map tiles. We're using our public key, but have introduced a filter should you need to change this. On this update, we've changed our mapbox id, and have written an upgrade script that will ensure you have a smooth transition in this update
+* FIX - The document component css class has been renamed! This was inevitable. It was mis-labeled as docmument component from day one, so we've fixed it to the proper spelling, of "document" component
 
 = 1.4.2 =
 * NEW - Compatibility with Lasso - our soon to be released front-end editor add-on
