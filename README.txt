@@ -6,7 +6,7 @@ Donate link: http://aesopstoryengine.com/donate
 Tags: aesop, story, business, education, parallax, interactive, shortcode, gallery, grid gallery, thumbnail gallery,
 Requires at least: 3.8
 Tested up to: 4.1.1
-Stable tag: 1.5
+Stable tag: 1.5.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -158,6 +158,16 @@ Full documentation can be found below.
 * Initial Release
 
 == Changelog ==
+
+= 1.5.1 =
+* FIX - Massive codebase overhaul bringing Aesop Story Engine close to WordPress VIP plugin standards
+* FIX - Combed through the codebase and removed all unused vars and updated php docs per Scrutinizer
+* FIX - Undefined $classes variable in Quote component
+* FIX - Fixed an issue with the Parallax component where the height would sometimes not be calculated correctly
+* FIX - Added additional logic to the Mapbox upgrade process sent with 1.5 to check for an empty value to ensure better upgrade notifications
+* FIX - Fixed the welcome page on plugin activation not firing correctly
+* FIX - Added a capability check so upgrade notices aren’t shown to non-admins
+* ADDED - Added headings to the aesop_component_media_filter
 
 = 1.5 =
 * NEW - Welcome screen on plugin activation
