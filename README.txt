@@ -6,7 +6,7 @@ Donate link: http://aesopstoryengine.com/donate
 Tags: aesop, story, business, education, parallax, interactive, shortcode, gallery, grid gallery, thumbnail gallery,
 Requires at least: 3.8
 Tested up to: 4.1.1
-Stable tag: 1.5.1
+Stable tag: 1.5.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -158,6 +158,11 @@ Full documentation can be found below.
 * Initial Release
 
 == Changelog ==
+
+= 1.5.2 =
+* FIX - Fixed an issue with the Photoset gallery breaking with the last update
+* FIX - Added a capability check so admin_notices aren't shown to non-admins
+* FIX - Fixed issue with self-hosted Video Component not displaying correctly in Firefox
 
 = 1.5.1 =
 * FIX - Massive codebase overhaul bringing Aesop Story Engine close to WordPress VIP plugin standards
