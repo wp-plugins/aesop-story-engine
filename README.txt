@@ -6,7 +6,7 @@ Donate link: http://aesopstoryengine.com/donate
 Tags: aesop, story, business, education, parallax, interactive, shortcode, gallery, grid gallery, thumbnail gallery,
 Requires at least: 3.8
 Tested up to: 4.2
-Stable tag: 1.6
+Stable tag: 1.6.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -172,6 +172,9 @@ Full documentation can be found below.
 * Initial Release
 
 == Changelog ==
+
+= 1.6.1 =
+* FIX - Patched XSS vulnerability with not properly escaping add_query_arg(). Only an attacker with admin privileges would have been able to take advantage of this vulnerability.
 
 = 1.6 =
 * FIX - PHP notice being triggered from not padding in an ID for current_user_can('edit_post')
