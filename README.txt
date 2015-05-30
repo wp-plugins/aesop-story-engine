@@ -5,8 +5,8 @@ Plugin URI: http://aesopstoryengine.com
 Donate link: http://aesopstoryengine.com/donate
 Tags: aesop, story, business, education, parallax, interactive, shortcode, gallery, grid gallery, thumbnail gallery,
 Requires at least: 3.8
-Tested up to: 4.2
-Stable tag: 1.6.1
+Tested up to: 4.2.2
+Stable tag: 1.6.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -103,10 +103,10 @@ Aesop Story Engine is currently available in 30 languages. We work closely with 
 
 * Български (Bulgarian)
 * čeština‎ (Czech)
-* 中文 (Chinese (China)) 
-* Dansk (Danish) 
-* Nederlands (Dutch) 
-* English (US) 
+* 中文 (Chinese (China))
+* Dansk (Danish)
+* Nederlands (Dutch)
+* English (US)
 * Suomi (Finnish)
 * Français (French (France))
 * Deutsch (German)
@@ -172,6 +172,17 @@ Full documentation can be found below.
 * Initial Release
 
 == Changelog ==
+
+= 1.6.2 =
+* NEW - Contributor guidelines
+* FIX - Master branch of ASE is linked correctly to Scrutinizer in readme.md
+* FIX - Typo in 1.6.1 changelog
+* FIX - Fixed a bug with backward compatibilty function causing slow/crashing admin on sites with several thousand posts
+* FIX - Fixed a bug where updating a component would send it to the top of the post editor in Firefox - props @etc
+* FIX - Added a fallback for gallery image thumbnails in admin if thumbnail size isn't available
+* TWEAK - Removed iframe border around Kickstarter videos - props @wavetree
+* TWEAK - Fixed image component failing validation - props @wavetree
+* TRANSLATIONS - Added English (United Kingdom), Indonesian, Spanish (Mexico), Burmese, and Arabic. Aesop is now available in 35 languages thanks to WP Translations!
 
 = 1.6.1 =
 * FIX - Patched XSS vulnerability with not properly escaping add_query_arg(). Only an attacker with admin privileges would have been able to take advantage of this vulnerability.
