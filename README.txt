@@ -6,7 +6,7 @@ Donate link: http://aesopstoryengine.com/donate
 Tags: aesop, story, business, education, parallax, interactive, shortcode, gallery, grid gallery, thumbnail gallery,
 Requires at least: 3.8
 Tested up to: 4.2.2
-Stable tag: 1.6.2
+Stable tag: 1.6.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -172,6 +172,10 @@ Full documentation can be found below.
 * Initial Release
 
 == Changelog ==
+
+= 1.6.3 =
+* TWEAK - improved Document component markup which also fixes an issue with editing using Lasso
+* TWEAK - i18n updates
 
 = 1.6.2 =
 * NEW - Contributor guidelines
