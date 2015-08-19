@@ -5,8 +5,8 @@ Plugin URI: http://aesopstoryengine.com
 Donate link: http://aesopstoryengine.com/donate
 Tags: aesop, story, business, education, parallax, interactive, shortcode, gallery, grid gallery, thumbnail gallery,
 Requires at least: 3.8
-Tested up to: 4.2.2
-Stable tag: 1.6.3
+Tested up to: 4.3
+Stable tag: 1.6.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -172,6 +172,10 @@ Full documentation can be found below.
 * Initial Release
 
 == Changelog ==
+
+* FIX - Fixed the gallery shortcodes that were broken by WordPress 4.3
+* TWEAK - i18n updates
+* TWEAK - Renamed Lasso to Editus
 
 = 1.6.3 =
 * TWEAK - improved Document component markup which also fixes an issue with editing using Lasso
