@@ -1,12 +1,12 @@
 === Aesop Story Engine ===
-Contributors: nphaskins, etcio
+Contributors: nphaskins, etcio, michaelbeil
 Author URI:  http://nickhaskins.com
 Plugin URI: http://aesopstoryengine.com
 Donate link: http://aesopstoryengine.com/donate
 Tags: aesop, story, business, education, parallax, interactive, shortcode, gallery, grid gallery, thumbnail gallery,
 Requires at least: 3.8
-Tested up to: 4.3
-Stable tag: 1.6.4
+Tested up to: 4.3.1
+Stable tag: 1.6.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -99,13 +99,16 @@ All components are pluggable, and there are ample filters and actions to manipul
 If you think something is missing, we want to hear from you. Post your request and bugs on [Github](https://github.com/bearded-avenger/aesop-core).
 
 = Languages =
-Aesop Story Engine is currently available in 30 languages. We work closely with the folks over at WP Translations, and it's because of them that these translations are available.
+Aesop Story Engine is currently available in 36 languages. We work closely with the folks over at WP Translations, and it's because of them that these translations are available.
 
+* العربية (Arabic)
 * Български (Bulgarian)
+* Burmese (Myanmar)
 * čeština‎ (Czech)
 * 中文 (Chinese (China))
-* Dansk (Danish)
+* Dansk (Danish (Denmark))
 * Nederlands (Dutch)
+* English (United Kingdom)
 * English (US)
 * Suomi (Finnish)
 * Français (French (France))
@@ -113,6 +116,7 @@ Aesop Story Engine is currently available in 30 languages. We work closely with 
 * Ελληνικά (Greek)
 * עִבְרִית (Hebrew)
 * Magyar (Hungarian)
+* Indonesian (Indonesia)
 * Italiano (Italian)
 * 日本語 (Japanese)
 * ភាសាខ្មែរ (Khmer)
@@ -127,6 +131,8 @@ Aesop Story Engine is currently available in 30 languages. We work closely with 
 * Slovenčina (Slovak)
 * slovenščina (Slovenian)
 * Español (Spanish (Argentina))
+* Español (Spanish (Chile))
+* Español (Spanish (Mexico))
 * Español (Spanish (Spain))
 * ไทย (Thai)
 * Türkçe (Turkish)
@@ -173,6 +179,14 @@ Full documentation can be found below.
 
 == Changelog ==
 
+= 1.6.6 =
+* FIX - Fixed improper function name introduced with 1.6.4 which causes Editus to not be able to edit Aesop components
+
+= 1.6.5 =
+* FIX - Fixed the timeline shortcode that was broken by our shortcode fix
+* TWEAK - i18n updates
+
+= 1.6.4 =
 * FIX - Fixed the gallery shortcodes that were broken by WordPress 4.3
 * TWEAK - i18n updates
 * TWEAK - Renamed Lasso to Editus
